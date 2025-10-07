@@ -415,3 +415,99 @@
   background-color: rgba(255, 255, 255, 0.15);
   opacity: 0.8;
 }
+
+/* ============================================
+   FORCED STATES FOR VISUAL DEMONSTRATION
+   ============================================ */
+
+/* Force hover state */
+.forceHover.primary {
+  background-color: var(--grc-primitive-blue-700);
+  border-color: var(--grc-primitive-blue-700);
+}
+
+.forceHover.secondary {
+  background-color: var(--grc-primitive-neutral-200);
+  border-color: var(--grc-primitive-neutral-300);
+}
+
+.forceHover.outline {
+  background-color: var(--grc-primitive-neutral-50);
+  border-color: var(--grc-primitive-neutral-400);
+}
+
+.forceHover.ghost {
+  background-color: var(--grc-primitive-neutral-100);
+}
+
+/* Force focus state */
+.forceFocus {
+  outline: 2px solid var(--grc-primitive-blue-600);
+  outline-offset: 2px;
+}
+
+/* Force active/pressed state */
+.forceActive.primary {
+  background-color: var(--grc-primitive-blue-700);
+  transform: translateY(1px);
+}
+
+.forceActive.secondary {
+  background-color: var(--grc-primitive-neutral-200);
+  transform: translateY(1px);
+}
+
+.forceActive.outline {
+  background-color: var(--grc-primitive-neutral-100);
+  transform: translateY(1px);
+}
+
+.forceActive.ghost {
+  background-color: var(--grc-primitive-neutral-200);
+  transform: translateY(1px);
+}
+
+/* Dark theme forced states */
+.button.dark.forceHover.primary {
+  background-color: var(--grc-primitive-blue-700);
+  border-color: var(--grc-primitive-blue-700);
+}
+
+.button.dark.forceHover.secondary {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.button.dark.forceHover.outline {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.button.dark.forceHover.ghost {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.button.dark.forceFocus {
+  outline: 2px solid var(--grc-primitive-blue-500);
+  outline-offset: 2px;
+}
+
+.button.dark.forceActive.primary {
+  background-color: var(--grc-primitive-blue-700);
+  transform: translateY(1px);
+}
+
+.button.dark.forceActive.secondary {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(1px);
+}
+
+.button.dark.forceActive.outline {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(1px);
+}
+
+.button.dark.forceActive.ghost {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(1px);
+}

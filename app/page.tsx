@@ -154,6 +154,103 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Interactive States Section */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Interactive States</h2>
+          <div className={styles.stateGrid}>
+            <div className={styles.stateColumn}>
+              <span className={styles.stateLabel}>Default</span>
+              <Button variant="primary" size="sm">
+                Primary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <span className={styles.stateLabel}>Hover</span>
+              <Button variant="primary" size="sm" forceHover>
+                Primary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <span className={styles.stateLabel}>Focus</span>
+              <Button variant="primary" size="sm" forceFocus>
+                Primary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <span className={styles.stateLabel}>Active</span>
+              <Button variant="primary" size="sm" forceActive>
+                Primary
+              </Button>
+            </div>
+          </div>
+          <div className={styles.stateGrid}>
+            <div className={styles.stateColumn}>
+              <Button variant="secondary" size="sm">
+                Secondary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="secondary" size="sm" forceHover>
+                Secondary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="secondary" size="sm" forceFocus>
+                Secondary
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="secondary" size="sm" forceActive>
+                Secondary
+              </Button>
+            </div>
+          </div>
+          <div className={styles.stateGrid}>
+            <div className={styles.stateColumn}>
+              <Button variant="outline" size="sm">
+                Outline
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="outline" size="sm" forceHover>
+                Outline
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="outline" size="sm" forceFocus>
+                Outline
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="outline" size="sm" forceActive>
+                Outline
+              </Button>
+            </div>
+          </div>
+          <div className={styles.stateGrid}>
+            <div className={styles.stateColumn}>
+              <Button variant="ghost" size="sm">
+                Ghost
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="ghost" size="sm" forceHover>
+                Ghost
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="ghost" size="sm" forceFocus>
+                Ghost
+              </Button>
+            </div>
+            <div className={styles.stateColumn}>
+              <Button variant="ghost" size="sm" forceActive>
+                Ghost
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Disabled States Section */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Disabled States</h2>

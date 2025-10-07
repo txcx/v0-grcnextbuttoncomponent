@@ -84,6 +84,29 @@
   align-items: center;
 }
 
+/* Added styles for interactive states grid layout */
+.stateGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stateColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.stateLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* ============================================
    EXAMPLES
    ============================================ */
@@ -188,6 +211,12 @@
   .grid {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  /* Added responsive layout for state grid */
+  .stateGrid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
   }
 
   .actionBar {

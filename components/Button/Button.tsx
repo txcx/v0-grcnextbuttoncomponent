@@ -12,6 +12,9 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   iconOnly?: boolean
   kbdHint?: string
   isLoading?: boolean
+  forceHover?: boolean
+  forceFocus?: boolean
+  forceActive?: boolean
   children?: React.ReactNode
 }
 
@@ -26,6 +29,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       kbdHint,
       isLoading = false,
       disabled = false,
+      forceHover = false,
+      forceFocus = false,
+      forceActive = false,
       className = "",
       children,
       ...props
@@ -58,6 +64,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       styles[theme],
       iconOnly && styles.iconOnly,
       isLoading && styles.loading,
+      forceHover && styles.forceHover,
+      forceFocus && styles.forceFocus,
+      forceActive && styles.forceActive,
       className,
     ]
       .filter(Boolean)
