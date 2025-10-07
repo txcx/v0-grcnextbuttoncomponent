@@ -47,7 +47,7 @@ export default function Home() {
             <option value="'IBM Plex Sans', sans-serif">IBM Plex Sans</option>
             <option value="'Source Sans 3', sans-serif">Source Sans 3</option>
           </select>
-          <Button variant="ghost" size="sm" onClick={toggleTheme} leadingIcon={<i className="fas fa-moon" />}>
+          <Button variant="ghost" size="sm" onClick={toggleTheme} leadingIcon={<i className="fal fa-moon" />}>
             {theme === "light" ? "Dark" : "Light"} Mode
           </Button>
         </div>
@@ -80,16 +80,16 @@ export default function Home() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>With Icons</h2>
           <div className={styles.grid}>
-            <Button variant="primary" size="sm" leadingIcon={<i className="fas fa-plus" />}>
+            <Button variant="primary" size="sm" leadingIcon={<i className="fal fa-plus" />}>
               New Task
             </Button>
-            <Button variant="secondary" size="sm" trailingIcon={<i className="fas fa-chevron-down" />}>
+            <Button variant="secondary" size="sm" trailingIcon={<i className="fal fa-chevron-down" />}>
               View settings
             </Button>
-            <Button variant="outline" size="sm" leadingIcon={<i className="fas fa-download bg-transparent" />}>
+            <Button variant="outline" size="sm" leadingIcon={<i className="fal fa-download bg-transparent" />}>
               Import / Export
             </Button>
-            <Button variant="ghost" size="sm" leadingIcon={<i className="fas fa-search" />}>
+            <Button variant="ghost" size="sm" leadingIcon={<i className="fal fa-search" />}>
               Search
             </Button>
           </div>
@@ -100,16 +100,16 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Icon Only</h2>
           <div className={styles.grid}>
             <Button variant="primary" size="sm" iconOnly aria-label="Add new item">
-              <i className="fas fa-plus" />
+              <i className="fal fa-plus" />
             </Button>
             <Button variant="secondary" size="sm" iconOnly aria-label="Settings">
-              <i className="fas fa-cog" />
+              <i className="fal fa-cog" />
             </Button>
             <Button variant="outline" size="sm" iconOnly aria-label="Search">
-              <i className="fas fa-search" />
+              <i className="fal fa-search" />
             </Button>
             <Button variant="ghost" size="sm" iconOnly aria-label="More options">
-              <i className="fas fa-ellipsis-h" />
+              <i className="fal fa-ellipsis-h" />
             </Button>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default function Home() {
             <Button
               variant="outline"
               size="sm"
-              leadingIcon={<i className="fas fa-search bg-transparent" />}
+              leadingIcon={<i className="fal fa-search bg-transparent" />}
               kbdHint="⌘K"
             >
               Quick actions
@@ -145,7 +145,7 @@ export default function Home() {
             <Button variant="primary" size="sm" isLoading={isLoading} onClick={handleLoadingDemo}>
               Save Changes
             </Button>
-            <Button variant="secondary" size="sm" isLoading={isLoading} leadingIcon={<i className="fas fa-download" />}>
+            <Button variant="secondary" size="sm" isLoading={isLoading} leadingIcon={<i className="fal fa-download" />}>
               Download
             </Button>
             <Button variant="outline" size="sm" isLoading={isLoading}>
@@ -192,10 +192,10 @@ export default function Home() {
           <div className={styles.example}>
             <h3 className={styles.exampleTitle}>Toolbar Actions</h3>
             <div className={styles.toolbar}>
-              <Button variant="outline" size="sm" leadingIcon={<i className="fas fa-download bg-transparent" />}>
+              <Button variant="outline" size="sm" leadingIcon={<i className="fal fa-download bg-transparent" />}>
                 Import / Export
               </Button>
-              <Button variant="primary" size="sm" leadingIcon={<i className="fas fa-plus" />}>
+              <Button variant="primary" size="sm" leadingIcon={<i className="fal fa-plus" />}>
                 New Person
               </Button>
             </div>
@@ -206,16 +206,16 @@ export default function Home() {
             <div className={styles.actionBar}>
               <span className={styles.selectionCount}>14 selected</span>
               <div className={styles.actions}>
-                <Button variant="ghost" size="sm" leadingIcon={<i className="fas fa-list" />}>
+                <Button variant="ghost" size="sm" leadingIcon={<i className="fal fa-list" />}>
                   Add to list
                 </Button>
-                <Button variant="ghost" size="sm" leadingIcon={<i className="fas fa-envelope" />}>
+                <Button variant="ghost" size="sm" leadingIcon={<i className="fal fa-envelope" />}>
                   Send email
                 </Button>
-                <Button variant="ghost" size="sm" leadingIcon={<i className="fas fa-play" />}>
+                <Button variant="ghost" size="sm" leadingIcon={<i className="fal fa-play" />}>
                   Run workflow
                 </Button>
-                <Button variant="primary" size="sm" trailingIcon={<i className="fas fa-chevron-down" />}>
+                <Button variant="primary" size="sm" trailingIcon={<i className="fal fa-chevron-down" />}>
                   Open record
                 </Button>
               </div>
